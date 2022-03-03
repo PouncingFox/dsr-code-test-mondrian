@@ -1,0 +1,274 @@
+body {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* Main section */
+#painting {
+  margin: 50px auto;
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(20, minmax(0, 1fr));
+  grid-auto-rows: 1em;
+  grid-auto-flow: dense;
+}
+#painting div {
+  border: 2px solid black;
+}
+
+/* Blocks */
+.gray-1 {
+  grid-column: span 3;
+  grid-row: span 1;
+  background-color: #BDB9BA;
+}
+.gray-2 {
+  grid-column: span 12;
+  background-color: #8B888B;
+}
+.gray-3 {
+  grid-column: span 5;
+  grid-row: span 8;
+  background-color: #AAA9B0;
+}
+.gray-4 {
+  grid-column: span 3;
+  grid-row: span 25;
+  background-color: #C6C6C8;
+}
+.black-1 {
+  grid-column: span 2;
+  grid-row: span 7;
+  background-color: #09090B;
+}
+.blue-1 {
+  grid-column: span 10;
+  grid-row: span 7;
+  background-color: #0C2030;
+}
+.gray-5 {
+  grid-column: span 8;
+  grid-row: span 7;
+  background-color: #97969F;
+}
+.orange-1 {
+  grid-column: span 4;
+  grid-row: span 7;
+  background-color: #C13512;
+}
+.black-2 {
+  grid-column: span 4;
+  grid-row: span 7;
+  background-color: #080808;
+}
+.blue-2 {
+  grid-column: span 1;
+  grid-row: span 7;
+  background-color: #1A2D44;
+}
+.black-3 {
+  grid-column: span 2;
+  grid-row: span 11;
+  background-color: #150E10;
+}
+.yellow-1 {
+  grid-column: span 6;
+  grid-row: span 11;
+  background-color: #E2BD18;
+}
+.blue-3 {
+  grid-column: span 4;
+  grid-row: span 18;
+  background-color: #1D3144;
+}
+.orange-2 {
+  grid-column: span 4;
+  grid-row: span 18;
+  background-color: #D23E13;
+}
+.gray-6 {
+  grid-column: span 1;
+  grid-row: span 25;
+  background-color: #828286;
+}
+.gray-7 {
+  grid-column: span 3;
+  grid-row: span 23;
+  background-color: #A8A6A7;
+}
+.gray-8 {
+  grid-column: span 2;
+  grid-row: span 23;
+  background-color: #A9A8AD;
+}
+.yellow-2 {
+  grid-column: span 6;
+  grid-row: span 7;
+  background-color: #E9C01A;
+}
+.orange-3 {
+  grid-column: span 6;
+  grid-row: span 7;
+  background-color: #DA4D16;
+}
+.gray-9 {
+  grid-column: span 4;
+  grid-row: span 7;
+  background-color: #CBCACF;
+}
+.yellow-3 {
+  grid-column: span 4;
+  grid-row: span 7;
+  background-color: #E3BB19;
+}
+.black-4 {
+  grid-column: span 6;
+  grid-row: span 9;
+  background-color: #170D10;
+}
+.gray-10 {
+  grid-column: span 4;
+  grid-row: span 9;
+  background-color: #9A98A2;
+}
+.blue-4 {
+  grid-column: span 4;
+  grid-row: span 9;
+  background-color: #223143;
+}
+.orange-4 {
+  grid-column: span 1;
+  grid-row: span 13;
+  background-color: #9B230E;
+}
+.yellow-4 {
+  grid-column: span 5;
+  grid-row: span 4;
+  background-color: #D0A517;
+}
+.gray-11 {
+  grid-column: span 10;
+  grid-row: span 4;
+  background-color: #BCBABA;
+}
+.black-5 {
+  grid-column: span 4;
+  grid-row: span 4;
+  background-color: #1A1217;
+}
+
+/* Plaque */
+#plaque {
+  -webkit-box-shadow: 10px 10px 14px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 14px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 14px 0px rgba(0,0,0,0.75);
+  padding: 20px;
+  margin-bottom: 100px;
+  width: 450px;
+  margin-left: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.2;
+}
+#plaque .piece {
+  margin-top: 20px;
+  font-weight: 700;
+}
+#plaque i {
+  font-style: italic;
+}
+#plaque h1 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#plaque .biography {
+  margin-top: 50px;
+}
+
+/* Media Queries */
+@media (max-width: 599px) {
+  body {
+    display: block;
+  }
+  #painting div {
+    grid-column: span 20;
+    grid-row: span 9;
+  }
+  .gray-4 {
+    order: 1;
+  }
+  .gray-9 {
+    order: 2;
+  }
+  .gray-11 {
+    order: 3;
+  }
+  .gray-1 {
+    order: 4;
+  }
+  .gray-7 {
+    order: 5;
+  }
+  .gray-8 {
+    order: 6;
+  }
+  .gray-3 {
+    order: 7;
+  }
+  .gray-5 {
+    order: 8;
+  }
+  .gray-10 {
+    order: 9;
+  }
+  .gray-2 {
+    order: 10;
+  }
+  .gray-6 {
+    order: 11;
+  }
+  .black-5 {
+    order: 12;
+  }
+  .black-3 {
+    order: 13;
+  }
+  .black-4 {
+    order: 14;
+  }
+  .black-1, .black-2 {
+    order: 15;
+  }
+  .blue-4 {
+    order: 16;
+  }
+  .blue-3 {
+    order: 17;
+  }
+  .blue-2 {
+    order: 18;
+  }
+  .blue-1 {
+    order: 19;
+  }
+  .orange-3 {
+    order: 20;
+  }
+  .orange-2 {
+    order: 21;
+  }
+  .orange-1 {
+    order: 22;
+  }
+  .orange-4 {
+    order: 23;
+  }
+  .yellow-1, .yellow-2, .yellow-3, .yellow-4 {
+    order: 24;
+  }
+  #plaque {
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
